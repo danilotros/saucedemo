@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Saucedemo</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="c59c771718eed3b534b36fab4e696c3b15f097cb320bec9ba2e9e8bbeaa7649a.html">Verificar La Compra En La Pagina De Saucedemo</a></span>
+                > <span class="truncate-60"><a
+                    href="11e1a72d1f042128053f8a7ec52a5c5bcf97e82d8fbc4e53d53fd81d0506c63c.html">Validar Flujo de compras </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 05-05-2024 20:56</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Verificar La Compra En La Pagina De Saucedemo </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario<br />
+Quiero ingresar a la pagina de saucedemo<br />
+Para realizar la compra de diferentes productos
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Validar Flujo de compras
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="df91bc604d48b9af7c4774e52f4ff6d80ec66bcab4e464962d833cbc21c52efe.png" title=" Dado que el usuario ingresa a la pagina de saucedemo" width="2561"/>
+                <img src="df91bc604d48b9af7c4774e52f4ff6d80ec66bcab4e464962d833cbc21c52efe.png" title=" Daniel abrir" width="2561"/>
+                <img src="df91bc604d48b9af7c4774e52f4ff6d80ec66bcab4e464962d833cbc21c52efe.png" title=" Daniel opens the Pagina sauce demo" width="2561"/>
+                <img src="df91bc604d48b9af7c4774e52f4ff6d80ec66bcab4e464962d833cbc21c52efe.png" title=" Daniel abrir (completed)" width="2561"/>
+                <img src="df91bc604d48b9af7c4774e52f4ff6d80ec66bcab4e464962d833cbc21c52efe.png" title=" Dado que el usuario ingresa a la pagina de saucedemo (completed)" width="2561"/>
+                <img src="4dfcfd669c32ab0831ad8fd9ed05be4a7a0a9d71472741bc68415c0e0ae13a32.png" title=" Cuando ingresa sus credenciales
+| nombre | clave |
+| standard_user | secret_sauce |" width="2561"/>
+                <img src="4dfcfd669c32ab0831ad8fd9ed05be4a7a0a9d71472741bc68415c0e0ae13a32.png" title=" Daniel ingresar datos" width="2561"/>
+                <img src="4dfcfd669c32ab0831ad8fd9ed05be4a7a0a9d71472741bc68415c0e0ae13a32.png" title=" Daniel enters 'standard_user' into Campo nombre de usuario" width="2561"/>
+                <img src="4dfcfd669c32ab0831ad8fd9ed05be4a7a0a9d71472741bc68415c0e0ae13a32.png" title=" Daniel enters 'standard_user' into Campo nombre de usuario (completed)" width="2561"/>
+                <img src="4dfcfd669c32ab0831ad8fd9ed05be4a7a0a9d71472741bc68415c0e0ae13a32.png" title=" Daniel enters 'secret_sauce' into Campo clave de usuario" width="2561"/>
+                <img src="1d889733b8c85d4045adbfb2fbcfb8d0e3284436a3a48f69a4b7ef0b96419173.png" title=" Daniel enters 'secret_sauce' into Campo clave de usuario" width="2561"/>
+                <img src="1d889733b8c85d4045adbfb2fbcfb8d0e3284436a3a48f69a4b7ef0b96419173.png" title=" Daniel enters 'secret_sauce' into Campo clave de usuario (completed)" width="2561"/>
+                <img src="1d889733b8c85d4045adbfb2fbcfb8d0e3284436a3a48f69a4b7ef0b96419173.png" title=" Daniel clicks on Boton ingresar usuario" width="2561"/>
+                <img src="cc90762715b235a3593e02b0927cdfc9c6aad0637990ea0c6db27a8150c2f3a9.png" title=" Daniel clicks on Boton ingresar usuario" width="2561"/>
+                <img src="cc90762715b235a3593e02b0927cdfc9c6aad0637990ea0c6db27a8150c2f3a9.png" title=" Daniel clicks on Boton ingresar usuario (completed)" width="2561"/>
+                <img src="cc90762715b235a3593e02b0927cdfc9c6aad0637990ea0c6db27a8150c2f3a9.png" title=" Daniel ingresar datos (completed)" width="2561"/>
+                <img src="cc90762715b235a3593e02b0927cdfc9c6aad0637990ea0c6db27a8150c2f3a9.png" title=" Cuando ingresa sus credenciales
+| nombre | clave |
+| standard_user | secret_sauce | (completed)" width="2561"/>
+                <img src="dca74b56f0523b8ca6f30eaff88fbc06f7c3dcd4ecea4433a3e32615d5708bfd.png" title=" Cuando el usuario selecciona un producto" width="2561"/>
+                <img src="dca74b56f0523b8ca6f30eaff88fbc06f7c3dcd4ecea4433a3e32615d5708bfd.png" title=" Daniel seleccionar" width="2561"/>
+                <img src="dca74b56f0523b8ca6f30eaff88fbc06f7c3dcd4ecea4433a3e32615d5708bfd.png" title=" Daniel clicks on Boton agregar producto seleccionado" width="2561"/>
+                <img src="dca74b56f0523b8ca6f30eaff88fbc06f7c3dcd4ecea4433a3e32615d5708bfd.png" title=" Daniel clicks on Boton agregar producto seleccionado (completed)" width="2561"/>
+                <img src="dca74b56f0523b8ca6f30eaff88fbc06f7c3dcd4ecea4433a3e32615d5708bfd.png" title=" Daniel clicks on Boton agregar producto seleccionado" width="2561"/>
+                <img src="ebfcf84090104f5acb54ca1ec7413d4ce937a9da661f23e0d68b97ed1c58a7f0.png" title=" Daniel clicks on Boton agregar producto seleccionado" width="2561"/>
+                <img src="ebfcf84090104f5acb54ca1ec7413d4ce937a9da661f23e0d68b97ed1c58a7f0.png" title=" Daniel clicks on Boton agregar producto seleccionado (completed)" width="2561"/>
+                <img src="ebfcf84090104f5acb54ca1ec7413d4ce937a9da661f23e0d68b97ed1c58a7f0.png" title=" Daniel clicks on Boton carrito de compras" width="2561"/>
+                <img src="da66cea50e15d6e21d9829fe5fec8a94d9017a34aaafb4a1a2cc8adac0210e2d.png" title=" Daniel clicks on Boton carrito de compras" width="2561"/>
+                <img src="da66cea50e15d6e21d9829fe5fec8a94d9017a34aaafb4a1a2cc8adac0210e2d.png" title=" Daniel clicks on Boton carrito de compras (completed)" width="2561"/>
+                <img src="da66cea50e15d6e21d9829fe5fec8a94d9017a34aaafb4a1a2cc8adac0210e2d.png" title=" Daniel seleccionar (completed)" width="2561"/>
+                <img src="da66cea50e15d6e21d9829fe5fec8a94d9017a34aaafb4a1a2cc8adac0210e2d.png" title=" Cuando el usuario selecciona un producto (completed)" width="2561"/>
+                <img src="da66cea50e15d6e21d9829fe5fec8a94d9017a34aaafb4a1a2cc8adac0210e2d.png" title=" Y visualiza el carrito de compras" width="2561"/>
+                <img src="da66cea50e15d6e21d9829fe5fec8a94d9017a34aaafb4a1a2cc8adac0210e2d.png" title=" Then validar carrito" width="2561"/>
+                <img src="da66cea50e15d6e21d9829fe5fec8a94d9017a34aaafb4a1a2cc8adac0210e2d.png" title=" Y visualiza el carrito de compras (completed)" width="2561"/>
+                <img src="2e1b737086bd305e05f97bbf4ca20c21230f8b70c36fde788c6c0572992fd01c.png" title=" Y completa el formulario de compra" width="2561"/>
+                <img src="2e1b737086bd305e05f97bbf4ca20c21230f8b70c36fde788c6c0572992fd01c.png" title=" Daniel completar" width="2561"/>
+                <img src="2e1b737086bd305e05f97bbf4ca20c21230f8b70c36fde788c6c0572992fd01c.png" title=" Daniel clicks on Boton checkout" width="2561"/>
+                <img src="2e1b737086bd305e05f97bbf4ca20c21230f8b70c36fde788c6c0572992fd01c.png" title=" Daniel clicks on Boton checkout (completed)" width="2561"/>
+                <img src="2e1b737086bd305e05f97bbf4ca20c21230f8b70c36fde788c6c0572992fd01c.png" title=" Daniel enters 'Laura' into Campo nombre comprador" width="2561"/>
+                <img src="685df892b01a1ca728ac1d267b9c80b990b804f01a320e5afa73763322d1fef6.png" title=" Daniel enters 'Laura' into Campo nombre comprador" width="2561"/>
+                <img src="685df892b01a1ca728ac1d267b9c80b990b804f01a320e5afa73763322d1fef6.png" title=" Daniel enters 'Laura' into Campo nombre comprador (completed)" width="2561"/>
+                <img src="685df892b01a1ca728ac1d267b9c80b990b804f01a320e5afa73763322d1fef6.png" title=" Daniel enters 'Hern&aacute;ndez' into Campo apellido comprador" width="2561"/>
+                <img src="e2e0929531ea3ec4f463ab564ae3e855b4235f283498fba4878a880672f822c3.png" title=" Daniel enters 'Hern&aacute;ndez' into Campo apellido comprador" width="2561"/>
+                <img src="e2e0929531ea3ec4f463ab564ae3e855b4235f283498fba4878a880672f822c3.png" title=" Daniel enters 'Hern&aacute;ndez' into Campo apellido comprador (completed)" width="2561"/>
+                <img src="e2e0929531ea3ec4f463ab564ae3e855b4235f283498fba4878a880672f822c3.png" title=" Daniel enters '379918' into Campo codigo postal comprador" width="2561"/>
+                <img src="1fd9c0e0502685c49c8a34ab2708b6182aece87b6c87ba4a2ca021112552bfdd.png" title=" Daniel enters '379918' into Campo codigo postal comprador" width="2561"/>
+                <img src="1fd9c0e0502685c49c8a34ab2708b6182aece87b6c87ba4a2ca021112552bfdd.png" title=" Daniel enters '379918' into Campo codigo postal comprador (completed)" width="2561"/>
+                <img src="1fd9c0e0502685c49c8a34ab2708b6182aece87b6c87ba4a2ca021112552bfdd.png" title=" Daniel clicks on Boton continuar" width="2561"/>
+                <img src="98773f8eb9e47a47a9847ff38c9449e1f9636acd65400d3b8db3e6bc3c0ad9d9.png" title=" Daniel clicks on Boton continuar" width="2561"/>
+                <img src="98773f8eb9e47a47a9847ff38c9449e1f9636acd65400d3b8db3e6bc3c0ad9d9.png" title=" Daniel clicks on Boton continuar (completed)" width="2561"/>
+                <img src="98773f8eb9e47a47a9847ff38c9449e1f9636acd65400d3b8db3e6bc3c0ad9d9.png" title=" Daniel clicks on Boton finalizar" width="2561"/>
+                <img src="223765e8cef4f2857927581604c8c610c650f3187ddf9b135e8cb945a61025c1.png" title=" Daniel clicks on Boton finalizar" width="2561"/>
+                <img src="223765e8cef4f2857927581604c8c610c650f3187ddf9b135e8cb945a61025c1.png" title=" Daniel clicks on Boton finalizar (completed)" width="2561"/>
+                <img src="223765e8cef4f2857927581604c8c610c650f3187ddf9b135e8cb945a61025c1.png" title=" Daniel completar (completed)" width="2561"/>
+                <img src="223765e8cef4f2857927581604c8c610c650f3187ddf9b135e8cb945a61025c1.png" title=" Y completa el formulario de compra (completed)" width="2561"/>
+                <img src="223765e8cef4f2857927581604c8c610c650f3187ddf9b135e8cb945a61025c1.png" title=" Entonces se valida el mensaje de finalizancion de compra Thank you for your order!" width="2561"/>
+                <img src="223765e8cef4f2857927581604c8c610c650f3187ddf9b135e8cb945a61025c1.png" title=" Then validar mensaje compra" width="2561"/>
+                <img src="223765e8cef4f2857927581604c8c610c650f3187ddf9b135e8cb945a61025c1.png" title=" Entonces se valida el mensaje de finalizancion de compra Thank you for your order! (completed): <span class='success-color'>SUCCESS</span>" width="2561"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.0</span>
+</div>
+</body>
+</html>

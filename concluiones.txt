@@ -1,0 +1,11 @@
+Conclusiones y Recomendaciones
+
+Durante la realización de este proyecto de automatización de pruebas, se han identificado varias observaciones y conclusiones importantes:
+
+1. Estabilidad de la Plataforma: La plataforma en general se ha mostrado estable y no ha generado retrasos significativos durante la ejecución de las pruebas de automatización. Esto es crucial para garantizar la eficiencia y confiabilidad del proceso de automatización.
+
+2. Identificación de Elementos: La mayoría de los elementos en la plataforma contienen un identificador (ID), lo que facilita el mapeo y uso en las pruebas de automatización. Esto simplifica el proceso de identificación y manipulación de elementos durante la ejecución de las pruebas.
+
+3. Flujo de Compra Dinámico: Para optimizar el proceso de ejecución de las pruebas, se implementó un flujo de compra dinámico. En lugar de seleccionar manualmente los mismos dos productos en cada prueba, se desarrolló una función que selecciona aleatoriamente dos productos y los valida en la pantalla del carrito. Además, se generaron nombres, apellidos y códigos postales de manera dinámica para completar el formulario de compra. Esto aumenta la eficiencia y reduce la dependencia de datos estáticos en las pruebas.
+
+En resumen, la automatización de pruebas en esta plataforma ha demostrado ser efectiva y eficiente. La estabilidad de la plataforma, junto con la disponibilidad de identificadores para los elementos, ha facilitado el desarrollo y ejecución de las pruebas automatizadas. La implementación de un flujo de compra dinámico ha mejorado aún más la eficiencia del proceso de automatización.
