@@ -39,7 +39,8 @@ e
 5src/main/java/userinterfaces/compra/PaginaCompra.java,8\2\822cea8a831dfcbeb7aa6060b45727ca2b8ab06b
 a
 1src/main/java/questions/ValidarMensajeCompra.java,4\2\4214fda53d5b6a9be734d394426940ddf2f52a23
-O
-target/site/serenity/index.html,c\e\ce1d953599e56cfde85da6acfdbbb722b0c73490
 A
 target/index.html,2\2\223dedb50652a7b1ed9c5c96d23f0846020dd5c1
+:
+
+readme.txt,4\5\451685e9efac4a6dc1fee73ec53ffb6b2c4c38b5

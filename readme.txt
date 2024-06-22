@@ -27,4 +27,4 @@ Visualización de Resultados:
 3. Abre el archivo index.html en Google Chrome para visualizar los resultados detallados de las pruebas.
 
 
-¡Disfruta de tu aplicación y tus pruebas automatizadas!
+¡Disfruta de tu aplicación y tus pruebas automatizadas
